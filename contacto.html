@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/contacto.css">
+    <title>La promesa de la tecnología</title>
+</head>
+<body>
+
+    <header>
+        <h1>La promesa del mundo Tecnologíco</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preferencias.html">Preferencias</a></li>
+                <li><a href="audivisuales.html">Audivisuales</a></li>
+                <li><a class="active" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contenedor-formulario">
+        <form action="">
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required  minlength="4">
+            <label for="apellido">Apellido: </label>
+            <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required minlength="4">
+            <label for="mail">Email: </label>
+            <input type="email" id="mail" name="mail" placeholder="Escribe tu email" required>
+            <label for="pais">Selecciona tu País: </label>
+            <select name="pais" id="pais">
+                <option value="Argentina">Argentina</option>
+                <option value="Perú">Perú</option>
+                <option value="Bolívia">Bolívia</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Venezuela">Venezuela</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="España">España</option>
+                <option value="Paraguay">Paraguay</option>
+            </select>
+            <label for="comentario">Escribe tu comentario: </label>
+            <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Escribe tus comentarios aquí"></textarea>
+            <label for="motivo">Motivo de contacto: </label>
+            <input type="radio" id="motivo" name="motivo"><i>Comerciales</i>
+            <input type="radio" id="motivo" name="motivo"><i>Reclamos</i>
+            <input type="radio" id="motivo" name="motivo"><i>Soy fan</i>
+            <input type="radio" id="motivo" name="motivo"><i>Otros</i>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2023</p>
+    </footer>
+
+    
+</body>
+</html>
